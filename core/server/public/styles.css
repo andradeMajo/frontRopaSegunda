@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  background-color: #0B0B0F;
+  color: white;
+  font-family: sans-serif;
+}
+
+.content {
+  padding: 20px;
+  padding-bottom: 80px; /* espacio para navbar */
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #111118;
+  border-top: 1px solid #2A2A35;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+}
+
+/* BOTONES */
+.nav-item {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #9CA3AF;
+  cursor: pointer;
+}
+
+/* ACTIVO */
+.nav-item.active {
+  color: #3B82F6;
+}
