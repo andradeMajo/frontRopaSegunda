@@ -1,0 +1,180 @@
+import { Dimensions, StyleSheet } from "react-native";
+
+const { width } = Dimensions.get("window");
+
+export default StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#0D0D0D",
+  },
+  imageContainer: {
+    position: "relative",
+  },
+  productImage: {
+    width: width,      // ← ahora sí funciona
+    height: 380,
+  },
+  counter: {
+    position: "absolute",
+    bottom: 16,
+    left: 16,
+    backgroundColor: "#111",
+    borderRadius: 20,
+    paddingHorizontal: 12,
+    paddingVertical: 4,
+  },
+  counterText: {
+    color: "#fff",
+    fontSize: 13,
+    fontWeight: "600",
+  },
+  bookmark: {
+    position: "absolute",
+    bottom: 16,
+    right: 16,
+    backgroundColor: "#EC4899",
+    borderRadius: 20,
+    padding: 8,
+  },
+  infoContainer: {
+    paddingHorizontal: 16,
+    paddingTop: 20,
+  },
+  productTitle: {
+    color: "#fff",
+    fontSize: 20,
+    fontWeight: "700",
+    marginBottom: 14,
+  },
+  userRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
+    marginBottom: 16,
+  },
+  avatar: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+  },
+  userName: {
+    color: "#fff",
+    fontSize: 15,
+    fontWeight: "700",
+  },
+  userHandle: {
+    color: "#888",
+    fontSize: 12,
+  },
+  tagsRow: {
+    flexDirection: "row",
+    gap: 10,
+    marginBottom: 10,
+  },
+  tagGray: {
+    flex: 1,
+    backgroundColor: "#5F616E",
+    borderRadius: 8,
+    paddingVertical: 10,
+    alignItems: "center",
+  },
+  tagPink: {
+    flex: 1,
+    backgroundColor: "#FF005E",
+    borderRadius: 8,
+    paddingVertical: 10,
+    alignItems: "center",
+  },
+  tagBlue: {
+    flex: 1,
+    backgroundColor: "#2102FE",
+    borderRadius: 8,
+    paddingVertical: 10,
+    alignItems: "center",
+  },
+  tagTeal: {
+    flex: 1,
+    backgroundColor: "#17E2BF",
+    borderRadius: 8,
+    paddingVertical: 10,
+    alignItems: "center",
+  },
+  tagText: {
+    color: "#fff",
+    fontSize: 13,
+    fontWeight: "700",
+  },
+  separator: {
+    height: 1,
+    backgroundColor: "#222",
+    marginVertical: 16,
+  },
+  sectionLabel: {
+    color: "#fff",
+    fontSize: 15,
+    fontWeight: "700",
+    marginBottom: 14,
+  },
+  iconosRow: {
+    flexDirection: "row",
+    gap: 12,
+    marginBottom: 20,
+    alignItems: "center",
+  },
+  iconBox: {
+    width: 56,
+    height: 56,
+    borderRadius: 14,
+    borderWidth: 1.5,
+    borderColor: "#333",
+    backgroundColor: "#1A1A1A",
+    alignItems: "center",
+    justifyContent: "center",
+    flexShrink: 0,
+  },
+  iconBoxActive: {
+    flex: 1,
+    height: 56,
+    borderRadius: 14,
+    backgroundColor: "#EC4899",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 8,
+    paddingHorizontal: 12,
+  },
+  iconImg: {
+    width: 28,
+    height: 28,
+  },
+  iconLabel: {
+    color: "#fff",
+    fontSize: 13,
+    fontWeight: "700",
+    flexShrink: 1,
+  },
+  seccionBtn: {
+    backgroundColor: "#1A1A1A",
+    borderRadius: 10,
+    paddingVertical: 14,
+    paddingHorizontal: 16,
+    marginBottom: 10,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  seccionBtnText: {
+    color: "#fff",
+    fontSize: 15,
+    fontWeight: "700",
+    textAlign: "center",
+  },
+  seccionTexto: {
+    color: "#fff",
+    fontSize: 20,
+    fontWeight: "500",
+    fontFamily: "Poppins_400Regular",
+    lineHeight: 30,
+    marginBottom: 16,
+  },
+});

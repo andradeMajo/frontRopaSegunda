@@ -1,0 +1,97 @@
+import { StyleSheet } from "react-native";
+import { colores, fuentes, radius } from "./StyleManager";
+
+export default StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: colores.black,
+  },
+  scrollContent: {
+    paddingHorizontal: 20,
+    paddingTop: 10,
+    paddingBottom: 20,
+  },
+  title: {
+    color: colores.secundary,
+    fontSize: 28,
+    fontFamily: fuentes.poppins,
+    fontWeight: fuentes.titleFontWeight,
+    textAlign: "left",
+    marginBottom: radius.marginBottom,
+  },
+  subtitle: {
+    color: "#ffffff",             
+    fontFamily: fuentes.poppins,
+    textAlign: "left",  
+    fontSize: 20,          
+    lineHeight: 22,
+    marginBottom: 35,
+  },
+  label: {
+    color: colores.text,
+    fontSize: 14,
+    fontFamily: fuentes.poppins,
+    marginBottom: 6,
+    marginTop: 10,
+  },
+  input: {
+    backgroundColor: colores.black,
+    borderWidth: 5,              
+    borderColor: "#ffffff",      
+    borderRadius: radius.borderRadius,
+    paddingHorizontal: 16,
+    paddingVertical: 14,
+    color: colores.text,
+    fontFamily: fuentes.poppins,
+    marginBottom: radius.marginBottom,
+    fontSize: 15,
+  },
+  passwordContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: colores.black,
+    borderWidth: 5,             
+    borderColor: "#ffffff",       
+    borderRadius: radius.borderRadius,
+    paddingHorizontal: 14,
+    marginBottom: radius.marginBottom,
+  },
+  passwordInput: {
+    flex: 1,
+    color: colores.text,
+    fontFamily: fuentes.poppins,
+    paddingVertical: 14,
+    fontSize: 15,
+  },
+  bottomBar: {
+    paddingHorizontal: 20,
+    paddingBottom: 30,
+    paddingTop: 10,
+    backgroundColor: colores.black,
+  },
+  button: {
+    backgroundColor: colores.primary,
+    paddingVertical: 16,
+    borderRadius: radius.borderRadius,
+    alignItems: "center",
+    shadowColor: colores.primary,
+    shadowOpacity: 0.4,
+    shadowRadius: 10,
+    elevation: 5,
+  },
+  buttonText: {
+    color: colores.text,
+    fontFamily: fuentes.poppins,
+    fontWeight: fuentes.titleFontWeight,
+    fontSize: 16,
+  },
+  footer: {
+    textAlign: "center",
+    color: colores.lightGrey,
+    marginTop: 25,
+  },
+  link: {
+    color: colores.text,
+    textDecorationLine: "underline",
+  },
+});
